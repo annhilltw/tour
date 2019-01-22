@@ -1,0 +1,307 @@
+/* css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{max-width:100%;height:auto;}
+
+/* css reset end */
+.wrap{
+    margin: 0 auto;
+    width: 1024px;
+    position: relative;
+    background-color: #f7f7f7;
+}
+
+.banner{
+    width: 1024px;
+    height: 380px;
+    background-image: url(../images/Hero.png);
+    padding-top: 89px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+#areaId{
+    margin-top:96px;
+    width: 452px;
+    height: 48px;
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 21px;
+
+    /* Removes the default <select> styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* Positions background arrow image */
+    background-image: url('../images/icons_down.png');
+    background-repeat: no-repeat;
+    background-position: 415px center;
+    border: 3px solid #fff;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;  
+}
+
+.hotDistricts{
+    position: absolute;
+    top:352px;
+    left:50%;
+    transform: translate(-50%,0%);
+    -ms-transform: translate(-50%,0%);
+	-webkit-transform: translate(-50%,0%);
+    width: 800px;
+    height: 112px;
+    padding:18px 50px;
+    text-align: left;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.hotDistricts p{
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.hotDistrict{
+    float:left;
+    width: 130px;
+    height: 42px;
+    font-family: "PingFangTC-Regular";
+    font-size: 20px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin: 12px 0 0 30px;
+    text-align: center;
+    line-height: 42px;
+}
+
+#districtTitle{
+    position: relative;
+    margin: 133px auto 0px auto;
+    width: 900px;
+    height: 117px;
+    margin-bottom: 21px; 
+    text-align: center;
+    border-top: 1px dashed #559AC8;
+}
+
+#districtTitle h2{
+    font-size: 36px;
+    line-height: 43px;
+    color:#8A82CC;
+    margin-top: 75px;   
+}
+
+#districtTitle img{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+}
+
+.touristAttractions{
+    width: 1024px;
+    padding:0 32px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.touristAttractions-empty{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.attraction{
+    float: left;
+    width: 464px;
+    height: 273px;
+    position: relative;
+    margin: 0 8px 35px 8px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    box-sizing: border-box;
+}
+
+.attraction-photo{
+    width: 464px;
+    height: 155px;
+    background-size: 100% auto ;
+    background-position: center;
+}
+
+.attraction-photo-name{
+    float: left;
+    margin-top: 115px;
+    margin-left:22px;
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.attraction-photo-zone{
+    float: right;
+    margin-top: 126px;
+    margin-right:22px;
+    color: #FFFFFF;    
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.attraction-info{
+    float: left;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 14px 23px;   
+}
+
+.attraction-info li{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px; 
+}
+
+.info-li-icon{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center top; 
+}
+
+.info-text{
+    float: left;
+    /*為避免被icon擠到下一行，稍微減少寬度*/
+    width: 380px;
+    line-height: 20px;
+}
+
+.attraction-tag{
+    position: absolute;
+    font-size: 16px;
+    line-height: 18px;
+    left:345px;
+    bottom: 19px;
+}
+
+.attraction-tag-icon{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+}
+
+.attraction-tag-text{
+    float: left;
+}
+
+.clearFix{
+    clear: both;
+}
+
+.pageList{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pageNumber{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+.pageNumber a{
+    font-size: 16px;
+    text-decoration:none;
+    color:#4a4a4a;
+}
+
+.pageNumber a:hover{
+    color:#a1a1a1;
+}
+
+#backToTop{
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    height: 24px;
+    width: 24px;
+    background-image: url(../images/btn_goTop.png);
+    background-repeat: no-repeat;
+}
+
+.footer{
+    width: 1024px;
+    height: 90px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color:#fff;
+    background-color: #559AC8;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.footer p{
+    line-height: 17px;
+    margin-bottom: 14px;
+}
+
+.footer span{
+    color:#FFD366;
+}
